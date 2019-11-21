@@ -1,0 +1,29 @@
+========================================================================================
+	-ds_name: rest14
+	-dim_char: 10
+	-dim_char_h: 50
+	-dim_ote_h: 50
+	-dim_ts_h: 50
+	-input_win: 3
+	-stm_win: 3
+	-optimizer: sgd
+	-n_epoch: 40
+	-dropout: 0.5
+	-emb_name: glove_840B
+	-tagging_schema: BIEOS
+	-rnn_type: LSTM
+	-sgd_lr: 0.1
+	-clip_grad: 5.0
+	-lr_decay: 0.05
+	-use_char: 0
+	-epsilon: 0.5
+	-dynet_seed: 1314159
+	-random_seed: 1234
+	-dim_w: 300
+	-ote_tag_vocab: {'O': 0, 'B': 1, 'I': 2, 'E': 3, 'S': 4}
+	-ts_tag_vocab: {'O': 0, 'B-POS': 1, 'I-POS': 2, 'E-POS': 3, 'S-POS': 4, 'B-NEG': 5, 'I-NEG': 6, 'E-NEG': 7, 'S-NEG': 8, 'B-NEU': 9, 'I-NEU': 10, 'E-NEU': 11, 'S-NEU': 12}
+
+Best results obtained at 33: ote f1: 0.8357, ts: precision: 0.6712, recall: 0.6562, ts micro-f1: 0.6637
+Best model is saved at: ./predictions/rest14_0.663656.txt
+========================================================================================
+
